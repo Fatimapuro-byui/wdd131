@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fdf9f5; 
+  color: #3e2723;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #5d4037; 
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #3e2723; 
+  padding: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #f8bbd0; 
+  color: #5d4037;
+}
+
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main > h1 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #5d4037;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(93, 64, 55, 0.1);
+  padding: 1.5rem;
+}
+
+.card h2 {
+  background-color: #5d4037;
+  color: white;
+  padding: 0.6rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  border-radius: 6px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.text-content p {
+  margin-bottom: 1rem;
+}
+
+.profile-pic {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.flag {
+  width: 100px;
+  height: auto;
+  margin-top: 0.8rem;
+}
+
+.flag + small {
+  display: block;
+  font-size: 0.85rem;
+  color: #795548;
+  margin-top: 0.3rem;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+}
+
+.card a {
+  color: #e91e63; 
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: #ad1457;
+}
+
+footer {
+  background-color: #5d4037;
+  color: white;
+  text-align: center;
+  padding: 1.3rem;
+  margin-top: 2.5rem;
+}
+
+footer p {
+  margin: 0.4rem 0;
+}
+
+.name,
+.country {
+  color: #e91e63;
+  font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin: 0 auto;
+  }
+
+  .flag {
+    margin: 0.8rem auto;
+  }
+}
