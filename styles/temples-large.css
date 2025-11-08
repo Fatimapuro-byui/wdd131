@@ -1,1 +1,52 @@
+@media (min-width: 768px) {
 
+  #hamburger {
+    display: none; 
+  }
+
+  #nav-menu {
+    display: flex; 
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  main {
+    padding: 0 2rem;
+    text-align: center;      
+    max-width: 900px;        
+    margin: 0 auto;          
+  }
+
+  main h2 {
+    font-size: 2.5rem;
+    margin-top: 3rem; 
+  }
+
+  figure {
+    margin: 0 auto;          
+    width: calc(33.333% - 4rem); 
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 2rem;
+  }
+
+  figure img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    display: block;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  figure:hover img {
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3); 
+  transform: scale(1.02);
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+}
