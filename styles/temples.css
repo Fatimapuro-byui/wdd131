@@ -76,6 +76,7 @@ main {
 main h2 {
   text-align: center;
   color: #4a6fa5;
+  margin-top: 2rem; 
   margin-bottom: 2rem;
   font-size: 2rem;
 }
